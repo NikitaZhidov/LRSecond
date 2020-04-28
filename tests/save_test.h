@@ -26,7 +26,8 @@ TEST(saveTest, positive) {
     /* "Вытаскивание" строки из файла */
     if ((f = fopen(save_filename, "r")) == NULL)
         FAIL();
-    fgets(test_str, 15, f);
+    if (fgets(test_str, 15, f))
+        printf("");
 
     fclose(f);
     if (remove(save_filename))

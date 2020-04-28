@@ -24,7 +24,7 @@ HEADERS += \
     text/_text.h \
     text/text.h
 
-QMAKE_CFLAGS += -Wall -Wextra
+QMAKE_CFLAGS += -Wall -Wextra -std=c++11
 
 # gcov
 QMAKE_CFLAGS += -fprofile-arcs -ftest-coverage

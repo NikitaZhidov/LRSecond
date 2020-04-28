@@ -22,7 +22,7 @@ TEST(rcTest, positive) {
     int test_length = test_text->length - 1;
 
     int i = 0;
-    auto test_iter = test_text->begin;
+    node* test_iter = test_text->begin;
     while (i != 2){
         test_iter = test_iter->next;
         i++;
@@ -53,7 +53,7 @@ TEST(rcTest, negative1) {
     int test_length = test_text->length - 1;
 
     int i = 0;
-    auto test_iter = test_text->begin;
+    node* test_iter = test_text->begin;
     while (i != 1){
         test_iter = test_iter->next;
         i++;

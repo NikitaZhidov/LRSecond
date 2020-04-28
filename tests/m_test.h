@@ -26,7 +26,7 @@ TEST(mTest, positive) {
 
      m(test_text, test_line, test_pos);
 
-     auto test_line_iter = test_text->begin;
+     node* test_line_iter = test_text->begin;
      while( ++i <= test_line)
          test_line_iter = test_line_iter->next;
 
@@ -47,7 +47,7 @@ TEST(mTest, negative1){
 
     m(test_text, 100, 6);
 
-    auto last_line = test_text->end;
+    node* last_line = test_text->end;
 
     if (test_text->cursor->line == last_line)
         SUCCEED();
@@ -66,7 +66,7 @@ TEST(mTest, negative2){
     append_line(test_text, line2);
     append_line(test_text, line3);
 
-    auto crsr_line = test_text->begin;
+    node* crsr_line = test_text->begin;
 
     m(test_text, -10, 6);
 
@@ -107,7 +107,7 @@ TEST(mTest, negative4){
     m(test_text, 100, 100);
 
     int last_position = strlen(test_text->begin->contents) - 1;
-    auto last_line = test_text->end;
+    node* last_line = test_text->end;
 
     ASSERT_EQ(last_position, test_text->cursor->position);
 

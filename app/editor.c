@@ -37,8 +37,8 @@ int main()
 
         /* Получаем команду */
 
-        if (fgets(cmdline, MAXLINE, stdin))
-            printf("");
+        if (!fgets(cmdline, MAXLINE, stdin))
+            printf("Error\n");
 	
         /* Извлекаем имя команды */
         if ((cmd = strtok(cmdline, " \n")) == NULL) {

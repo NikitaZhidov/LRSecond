@@ -11,7 +11,7 @@ QMAKE_CFLAGS += -Wall -Wextra -Werror
 
 # gcov
 QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
-QMAKE_CFLAGS += -fprofile-arcs -ftest-coverage
+QMAKE_CFLAGS += -fprofile-arcs -ftest-coverage -std=c++11
 LIBS += -lgcov
 
 

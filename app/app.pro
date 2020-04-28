@@ -24,8 +24,7 @@ HEADERS += \
     text/_text.h \
     text/text.h
 
-QMAKE_CFLAGS += -std=c++11
-
 # gcov
+
 QMAKE_CFLAGS += -fprofile-arcs -ftest-coverage
 LIBS += -lgcov

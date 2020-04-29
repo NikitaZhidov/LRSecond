@@ -64,14 +64,12 @@ void showonempty_line(int index, char *contents, int cursor, void *data)
     /* Выводим строку на экран */
     fprintf(f, "%s", contents);
     if (cursor != -1){
-        while(i != cursor){
+        while(contents[i] != '\0'){
+            if (i == cursor)
+                printf("|");
             printf("%c", contents[i]);
             i++;
         }
-        printf("%c", '|');
-        while(contents[i++] != '\0'){
-            printf("%c", contents[i]);
-            }
     }
     else{
         printf("%s", contents);

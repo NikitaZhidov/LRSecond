@@ -46,17 +46,16 @@ void append_line(text txt, const char *contents)
 static node *create_node(const char *contents)
 {  
     assert(contents != NULL);
-    node* NullNode = NULL;
     node *nd;
 
     if ((nd = (node *) malloc(sizeof(node))) == NULL) {
         printf("Not enough memory!\n");
-        return NullNode;
+        exit(EXIT_FAILURE);
     }
     
     if (strlen(contents) > MAXLINE) {
         printf("Not enough memory!\n");
-        return NullNode;
+        exit(EXIT_FAILURE);
     }    
 
     strncpy(nd->contents, contents, MAXLINE);

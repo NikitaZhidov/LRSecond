@@ -52,7 +52,7 @@ void showonempty_line(int index, char *contents, int cursor, void *data)
     int j = 0;
    
     /*Проверка на пустые строки*/
-    while(contents[j] == ' ')
+    while(contents[j    ] == ' ')
         j++;
     if (contents[j+1] == '\0'){
         return;
@@ -69,10 +69,9 @@ void showonempty_line(int index, char *contents, int cursor, void *data)
 	    i++;
 	}
 	printf("%c", '|');
-	while(contents[i] != '\0'){
+    while(contents[i++] != '\0'){
         fprintf(f, "%c", contents[i]);
 	    printf("%c", contents[i]);
-	    i++;
         }
     }
     else{

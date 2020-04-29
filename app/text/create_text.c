@@ -17,17 +17,11 @@ text create_text()
     text txt;
 
     /* Создаем структуру описания текста */
-    if ((txt = (list *) malloc(sizeof(list))) == NULL) {
+    if (   ((txt = (list *) malloc(sizeof(list))) == NULL) || ((txt->cursor = (crsr *) malloc(sizeof(crsr))) == NULL)  ) {
         fprintf(stderr, "Not enough memory!\n");
         exit(EXIT_FAILURE);
     }
-    
-    /* Создаем структуру описания курсора */
-    if ((txt->cursor = (crsr *) malloc(sizeof(crsr))) == NULL) {
-        fprintf(stderr, "Not enough memory!\n");
-        exit(EXIT_FAILURE);
-    }    
-    
+        
     /* Только что созданный текст не содержит ни одной строки */
     txt->begin = NULL;
     txt->end = NULL;

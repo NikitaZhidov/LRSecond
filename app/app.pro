@@ -5,22 +5,17 @@ CONFIG -= qt
 
 SOURCES += \
     editor.c \
-    load.c \
-    myfunc.c \
     save.c \
-    show.c \
     showonempty.c \
     text/append_line.c \
     text/create_text.c \
     text/m.c \
     text/mwbb.c \
     text/process_forward.c \
-    text/rc.c \
-    text/remove_all.c
+    text/rc.c
 
 HEADERS += \
     common.h \
-    myfunc.h \
     text/_text.h \
     text/text.h
 

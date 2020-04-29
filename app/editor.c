@@ -58,7 +58,7 @@ int main()
             if ((arg = strtok(NULL, " \n")) == NULL) {
                 fprintf(stderr, "Usage: load filename\n");
             } else {
-                load(txt, arg);
+                //load(txt, arg);
             }
             continue;
         }
@@ -112,7 +112,7 @@ int main()
 
         /* Выводим текст */
         if (strcmp(cmd, "show") == 0) {
-            show(txt);
+            //show(txt);
             continue;
         }
 	

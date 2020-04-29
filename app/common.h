@@ -18,13 +18,13 @@
 /**
  * Выводит содержимое указанного файла на экран
  */
-void show(text txt);
+//void show(text txt);
 void showonempty(text txt);
 
 /**
  * Загружает содержимое указанного файла
  */
-void load(text txt, char *filename);
+//void load(text txt, char *filename);
 void save(text txt, char *filename);
 
 #endif

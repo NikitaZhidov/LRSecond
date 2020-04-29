@@ -17,7 +17,6 @@ LIBS += -lgcov
 
 HEADERS +=     \
     ../app/common.h \
-    ../app/myfunc.h \
     ../app/text/_text.h \
     ../app/text/text.h \
     m_test.h \
@@ -27,10 +26,7 @@ HEADERS +=     \
     save_test.h
 
 SOURCES +=     main.cpp \
-    ../app/load.c \
-    ../app/myfunc.c \
     ../app/save.c \
-    ../app/show.c \
     ../app/showonempty.c \
     ../app/text/append_line.c \
     ../app/text/create_text.c \
@@ -38,6 +34,5 @@ SOURCES +=     main.cpp \
     ../app/text/mwbb.c \
     ../app/text/process_forward.c \
     ../app/text/rc.c \
-    ../app/text/remove_all.c
 
 INCLUDEPATH += ../app

@@ -19,7 +19,6 @@
 void m(text txt, int number_l, int number_p)
 {   
     node *currentl = txt->begin;
-
     if (txt->length == 0){
         printf("%s\n", "No lines");
         return;

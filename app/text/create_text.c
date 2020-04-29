@@ -14,12 +14,12 @@
  */
 text create_text()
 {  
-    text txt;
+    text txt = NULL;
 
     /* Создаем структуру описания текста */
     if (   ((txt = (list *) malloc(sizeof(list))) == NULL) || ((txt->cursor = (crsr *) malloc(sizeof(crsr))) == NULL)  ) {
         printf("Not enough memory!\n");
-        exit(EXIT_FAILURE);
+        return txt;
     }
         
     /* Только что созданный текст не содержит ни одной строки */

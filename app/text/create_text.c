@@ -18,8 +18,8 @@ text create_text()
 
     /* Создаем структуру описания текста */
     if (   ((txt = (list *) malloc(sizeof(list))) == NULL) || ((txt->cursor = (crsr *) malloc(sizeof(crsr))) == NULL)  ) {
-        fprintf(stderr, "Not enough memory!\n");
-        exit(EXIT_FAILURE);
+        printf("Not enough memory!\n");
+        return NULL;
     }
         
     /* Только что созданный текст не содержит ни одной строки */

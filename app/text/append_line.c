@@ -50,13 +50,13 @@ static node *create_node(const char *contents)
     node *nd;
 
     if ((nd = (node *) malloc(sizeof(node))) == NULL) {
-        fprintf(stderr, "Not enough memory!\n");
-        exit(EXIT_FAILURE);
+        printf("Not enough memory!\n");
+        return NULL;
     }
     
     if (strlen(contents) > MAXLINE) {
-        fprintf(stderr, "Too long line!\n");
-        exit(EXIT_FAILURE);
+        printf("Not enough memory!\n");
+        return NULL;
     }    
 
     strncpy(nd->contents, contents, MAXLINE);

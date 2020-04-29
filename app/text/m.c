@@ -47,13 +47,12 @@ void m(text txt, int number_l, int number_p)
 
     if (number_p > (int)strlen(currentl->contents)-1){
         printf("Invalid values (Max position: %d)\n", (int)strlen(currentl->contents)-1);
-        txt->cursor->position = strlen(currentl->contents)-1;
-        return;
+        number_p = strlen(currentl->contents)-1;
     }
-    else if (number_p < 0){
+
+    if (number_p < 0){
         printf("Invalid values (Min position: 0)\n");
-        txt->cursor->position = 0;
-        return;
+        number_p = 0;
     }
 
 

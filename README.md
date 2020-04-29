@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/NikitaZhidov/LRSecond.svg?branch=master)](https://travis-ci.org/NikitaZhidov/LRSecond)[![Coverage Status](https://coveralls.io/repos/github/NikitaZhidov/LRSecond/badge.svg?branch=master)](https://coveralls.io/github/NikitaZhidov/LRSecond?branch=master)

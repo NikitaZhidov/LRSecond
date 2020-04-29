@@ -23,7 +23,7 @@ text create_text()
     }
         
     /* Только что созданный текст не содержит ни одной строки */
-    txt->begin = NULL;
+    //txt->begin = NULL;
     txt->end = NULL;
     txt->length = 0;
     

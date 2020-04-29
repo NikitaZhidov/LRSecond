@@ -57,7 +57,8 @@ static node *create_node(const char *contents)
     }    
 
     strncpy(nd->contents, contents, MAXLINE);
-    nd->contents[MAXLINE] = '\0';    
+
+    nd->contents[MAXLINE] = ' ';
     nd->previous = NULL;
     nd->next = NULL;   
     

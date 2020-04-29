@@ -63,20 +63,20 @@ void showonempty_line(int index, char *contents, int cursor, void *data)
 
     /* Выводим строку на экран */
     if (cursor != -1){       
-	while(i != cursor){
-        fprintf(f, "%c", contents[i]);
-	    printf("%c", contents[i]);
-	    i++;
-	}
-	printf("%c", '|');
-    while(contents[i++] != '\0'){
-        fprintf(f, "%c", contents[i]);
-	    printf("%c", contents[i]);
+        while(i != cursor){
+            fprintf(f, "%c", contents[i]);
+            printf("%c", contents[i]);
+            i++;
         }
+        printf("%c", '|');
+        while(contents[i++] != '\0'){
+            fprintf(f, "%c", contents[i]);
+            printf("%c", contents[i]);
+            }
     }
-    else{
+    else {
         fprintf(f, "%s", contents);
-        printf("%s", contents);
+        //printf("%s", contents);
     }
  
 }

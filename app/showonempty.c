@@ -69,7 +69,7 @@ void showonempty_line(int index, char *contents, int cursor, void *data)
             i++;
         }
         printf("%c", '|');
-        while(contents[i++] != '\0'){
+        for(; contents[i] != '\0'; i++){
             printf("%c", contents[i]);
             }
     }

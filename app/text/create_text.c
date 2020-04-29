@@ -19,11 +19,10 @@ text create_text()
     /* Создаем структуру описания текста */
     if (   ((txt = (list *) malloc(sizeof(list))) == NULL) || ((txt->cursor = (crsr *) malloc(sizeof(crsr))) == NULL)  ) {
         printf("Not enough memory!\n");
-        txt = NULL;
     }
         
     /* Только что созданный текст не содержит ни одной строки */
-    //txt->begin = NULL;
+    txt->begin = NULL;
     txt->end = NULL;
     txt->length = 0;
     
